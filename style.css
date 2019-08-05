@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  input[type="text"]{
+    padding: 5px;
+    border: 1px solid gray;
+    margin: 5px;
+    border-radius: 5px;
+  }
+  
+  input[type="number"]{
+    padding: 5px;
+    border: 1px solid gray;
+    border-radius: 5px;
+  }
+  
+  input[type="submit"]{
+    padding: 5px;
+    /* border: 1px solid gray; */
+    width: 339px;
+    border-radius: 5px;
+    background: green;
+    color: #fff;
+  }
+  
+  button:hover {
+    cursor: pointer;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .error-message {
+    color: gray;
+  }
+  
+  .hidden {
+    display: none;
+  }

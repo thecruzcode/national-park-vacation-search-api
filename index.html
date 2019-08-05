@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>National Park Vacation Search App</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  </head>
+  <body>
+  <div class="container">
+    <h1>It's time to plan for that National Park Vacation.</h1>
+
+    <form id="js-form">
+      <label for="search-term">Search a Park By State Code</label>
+      <input type="text" name="search-term" placeholder="i.e. CA" id="js-search-term" required>
+
+      <label for="max-results">Max results to return</label>
+      <input type="number" name="max-results" id="js-max-results" value="10">
+      <input type="submit" value="Go">
+    </form>
+    <p id="js-error-message" class="error-message"></p>
+    <section id="results" class="hidden">
+      <h2>Search results<h2>
+      <ul id="results-list">
+      </ul>
+    </section>
+  </div>
+    <script src="script.js"></script>
+  </body>
+</html>
